@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+arq
+aiohttp
+sentence-transformers
+faiss-cpu
+aiosqlite
+readability-lxml
+beautifulsoup4
+python-dotenv
+httpx
+tqdm
