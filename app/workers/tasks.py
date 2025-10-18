@@ -79,6 +79,6 @@ async def search_topk(ctx, query: str, top_k: int = TOP_K):
     return results
 
 class WorkerSettings:
-    redis_settings = RedisSettings.from_dsn(os.getenv("REDIS_DSN", "redis://localhost:6379/0"))
+    redis_settings = RedisSettings.from_dsn(REDIS_DSN)
     functions = [process_url, search_topk]
     max_jobs = 8 
